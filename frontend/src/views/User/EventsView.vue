@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen flex items-center justify-center relative">
     <main class="h-full w-full flex items-center justify-center">
-      Main Dashboard
+      Event Dashboard
     </main>
     <BottomNavigation />
   </div>

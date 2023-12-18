@@ -1,13 +1,20 @@
 <template>
   <main class="h-screen flex items-center justify-center">
-    <h1 class="font-bold text-2xl">Dashboard ADMIN</h1>
+    <h1 @click="authStore.handleLogout()" class="font-bold text-2xl">
+      Dashboard ADMIN
+    </h1>
   </main>
 </template>
 
 <script>
+import { useAuthStore } from "@/stores/Auth";
+
 export default {
   setup() {
-    return {};
+    const authStore = useAuthStore();
+    return {
+      authStore,
+    };
   },
 };
 </script>
