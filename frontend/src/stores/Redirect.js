@@ -13,15 +13,17 @@ export const redirectTo = defineStore("redirect", {
       //     role = "";
       //   }
 
+      console.log(role);
+
       switch (role) {
         case "ADMIN":
-          router.currentRoute.value.path.split("/")[1] == "admin"
-            ? ""
-            : router.replace({ path: "/admin" });
-          // router.replace({ path: "/client" });
+          //   router.currentRoute.value.path.split("/")[1] == "admin"
+          //     ? ""
+          //     : router.replace({ path: "/admin" });
+          router.replace({ path: "/client" });
           break;
         case "USER":
-          router.replace({ path: "/user" });
+          router.replace({ path: "/USER" });
           break;
         default:
           router.replace({ path: "/login" });

@@ -23,8 +23,8 @@
         <span class="btm-nav-label">Home</span>
       </button>
       <button
-        @click="redirectTo('event')"
-        :class="activePath == '/user/event' ? 'active' : ''"
+        @click="redirectTo('reservation')"
+        :class="activePath == '/user/reservation' ? 'active' : ''"
         class="hover:bg-blue-100/50"
       >
         <svg
@@ -42,7 +42,7 @@
           <line x1="8" y1="2" x2="8" y2="6"></line>
           <line x1="3" y1="10" x2="21" y2="10"></line>
         </svg>
-        <span class="btm-nav-label">Events</span>
+        <span class="btm-nav-label">Reservation</span>
       </button>
       <button
         @click="redirectTo('profile')"

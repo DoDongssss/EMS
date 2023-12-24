@@ -6,6 +6,7 @@ import RegisterView from "../views/RegisterView.vue";
 import AdminView from "../views/Admin/IndexView.vue";
 //USER SIDE OF THE ACCOUNT
 import UserView from "../views/User/IndexView.vue";
+import ReservationView from "../views/User/ReservationView.vue";
 import ProfileView from "../views/User/ProfileView.vue";
 
 const router = createRouter({
@@ -37,9 +38,9 @@ const router = createRouter({
       component: UserView,
     },
     {
-      path: "/user/event",
-      name: "event",
-      component: ProfileView,
+      path: "/user/reservation",
+      name: "reservation",
+      component: ReservationView,
     },
     {
       path: "/user/profile",
